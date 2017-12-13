@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Trabajo Practico 12</title>
+        <style>
+            .par {
+                background: khaki;  
+            }
+            .impar {
+                background: darkcyan;
+            }
+            .primeroUltimo{
+                font-weight:bolder;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <fieldset>
+                <label for="titulo">Titulo</label><br>
+                <input type="text" id="titulo"><br>
+                <label for="contenido">Contenido</label><br>
+                <textarea name="contenido" id="contenido" cols="30" rows="10"></textarea><br>
+                <br>
+                <button type="button" onclick="agregarNoticia()">Agregar Noticia</button>
+            </fieldset>
+        </div>
+        <br>
+        <div id="noticias">
+        </div>
+       
+        <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="js/funciones.js"></script>
+    </body>
+</html>
